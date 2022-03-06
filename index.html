@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="outside">
+        <form id="survey-form" action="/my-handling-form-page" method="post">
+          <h1 id="title">PLACEMENT IN THE QUEUE OF CHILDREN UNDER SCHOOL AGE (6 YEARS) TO BE SENT TO PRE-SCHOOL ORGANIZATIONS</h1>
+          <p id="description"><b>Note:</b> <em>Fields marked with a star * are obligatory for filling</em></p>
+          
+          <!-- ------------------Information concerning the applicant---------------------------- -->
+          <fieldset>
+            <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+            <legend>Information concerning the applicant</legend>
+            <!-- formally describes the purpose of the fieldset it is included inside. -->
+            <div>
+              <label id="name-label" for="name">* Name of applicant:</label>
+              <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+            <div>
+              <label for="address-label">* Actual address:</label>
+              <input type="Address" id="address" name="Address" placeholder="Enter address here">   </div>
+            <div>
+              <label id="email-label" for="Email">* Email:</label>
+              <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+            <div>
+              <label id="number-label" for="phone">* Telephone:</label>
+              <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number" min="1" max="9">  </div>
+            <div>
+                       
+          </fieldset>
+
+           <!-- ------------------Information about the child---------------------------- -->
+          <fieldset>
+            
+            <legend>Information about the child</legend>
+            
+            <div>
+              <label id="name-label" for="name">* Surname:</label>
+              <input type="text" required id="name" name="user_name" placeholder="Enter surname here">   </div>
+            <div>
+              <label id="name-label" for="name">* Given name:</label>
+              <input type="text" required id="name" name="user_name" placeholder="Enter given name here">   </div>
+            <div>
+              <label for="address-label">* Date of birth:</label>
+              <input type="Date of birth" id="Date of birth" name="Date of birth" placeholder="Enter date here">   </div>
+              <div>
+                <label for="Gender">* Gender</label>
+                <p>
+                  <input type="radio" name="gender" value="male" checked> Male<br>
+                  <input type="radio" name="gender" value="female"> Female<br>
+                </p> 
+              </div>   
+            <div>
+              <label id="email-label" for="Email">* Type of benefit:</label>
+              <select id="dropdown">
+                <option value="List">select</option>
+                <option value="List">without privileges</option>
+                <option value="List">family with many children</option>
+                <option value="List">military children</option>
+                <option value="List">orphaned children</option>                
+              </select>
+            </div>                    
+          </fieldset>
+
+          <!-- ------------------Information of the PI--------------------------- -->
+          <fieldset>
+            
+            <legend>Information of the PI</legend>
+            
+            <div>
+              <label id="name-label" for="name">* List of PI:</label>
+              <select id="dropdown">
+                <option value="List">select</option>
+                <option value="List">Ainalaiyn</option>
+                <option value="List">Balapan</option>
+                <option value="List">Baldyrgan</option>
+                <option value="List">Erkemai</option>
+                
+              </select>
+            </div>
+
+            <div>
+              <label for="address-label">* Desired language of teaching:</label>
+              <select id="dropdown">
+                <option value="language">select</option>
+                <option value="language">qazaq</option>
+                <option value="language">english</option>
+                
+              </select>
+            </div> 
+            
+          </fieldset>
+
+          <!-- ------------------Signing services--------------------------- -->
+          <fieldset>
+            
+            <legend>Signing services</legend>
+            
+            <div>
+              <label id="sign-label" for="SIGN">SIGN USING THE ELECTRONIC DIGITAL SIGNATURE (EDS)</label>
+              <br>
+              <input type="text" required id="SIGN" name="SIGN" placeholder="click here">   </div>
+            <div>
+              <label for="address-label">SIGN USING THE MOBILE ELECTRONIC DIGITAL SIGNATURE (MEDS)</label>
+              <br>
+              <input type="text" required id="SIGN" name="SIGN" placeholder="click here">   </div>
+            <div>
+              <label id="name-label" for="name">SIGN USING THE SIGNING PAGE (BETA)</label>
+              <br>
+              <input type="text" required id="SIGN" name="SIGN" placeholder="click here">   </div>
+            
+          </fieldset>
+
+          <!-- ------------------Upload a copy of doc--------------------------- -->        
+          <fieldset>
+            <legend>Birth certificate</legend>
+                <p>Upload a copy of the child's Birth Certificate:
+              <button>Attach Files</button></p>
+          </fieldset>
+        
+          <div id="submitbutton">
+            <button type="submit" id="submit">Send your application</button>   </div>
+        
+        </form>
+          </div>
+</body>
+</html>
